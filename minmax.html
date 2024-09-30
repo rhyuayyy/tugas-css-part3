@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produk</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f9f9f9;
+            margin: 0;
+        }
+
+        .card {
+            width: 300px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+        }
+
+        .image-section img {
+            width: 100%;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            /* Menghapus border-radius 50% agar gambar tidak bulat */
+            transition: transform 0.3s ease;
+            /* Menambahkan efek transisi */
+        }
+
+        .image-section img:hover {
+            transform: scale(1.05);
+            /* Gambar akan membesar saat hover */
+        }
+
+        .image-section img:active {
+            transform: scale(0.95);
+            /* Gambar akan mengecil sedikit saat diklik */
+        }
+
+        .details-section {
+            padding: 15px;
+        }
+
+        .label {
+            background-color: #4CAF50;
+            color: white;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+        }
+
+        h2 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #FF5722;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        .original-price {
+            text-decoration: line-through;
+            color: #888;
+            font-size: 14px;
+            margin-left: 10px;
+        }
+
+        .discount {
+            color: #f44336;
+            font-size: 14px;
+        }
+
+        .additional-discount {
+            color: #ff4081;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .location,
+        .ratings {
+            font-size: 14px;
+            color: #777;
+            margin-top: 10px;
+        }
+
+        .ratings span {
+            color: #FFC107;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="image-section">
+            <img src="glad2glow.jpg" alt="Glad2Glow Cherry Blossom Betaine Micellar Water">
+        </div>
+        <div class="details-section">
+            <span class="label">Beli</span>
+            <h2>Glad2Glow Cherry Blossom Betaine Micellar Water</h2>
+            <p class="price">Rp48.000 <span class="original-price">Rp199.000</span> <span class="discount">-76%</span>
+            </p>
+            <p class="additional-discount">Diskon 10%</p>
+            <div class="location">
+                <p>Kota Tangerang</p>
+            </div>
+            <div class="ratings">
+                <span>⭐ 4.9 | 10rb+ terjual</span>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
